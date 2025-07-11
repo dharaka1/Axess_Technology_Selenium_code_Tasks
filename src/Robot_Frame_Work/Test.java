@@ -28,7 +28,7 @@ public class Test {
 		String s=" "; //Intilizing String s variable without Value for Screenshorts 
 		driver.manage().window().maximize(); //Maximize window
 		
-		Robot r=new Robot();
+		Robot r=new Robot(); // Robot Frame work syntax
 		
 		driver.get("https://www.facebook.com/"); // Launch Url
 		TakesScreenshot screen=(TakesScreenshot)driver;  // Take a screenshort //Topic : 2
