@@ -82,7 +82,7 @@ public class Test2{
         
         System.out.println("User_Name.png"); // It initiate Located Element pic name by using png.
         
-        System.out.println("UP Arrow to Password");
+        System.out.println("UP Arrow to User_Name");
         
 	    WebElement User_Click_Login=driver.findElement(By.xpath("//button[text()=\"Log in\"]"));
         
