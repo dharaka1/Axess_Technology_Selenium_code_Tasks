@@ -46,11 +46,14 @@ public class Test {
 		File sc2=new File("C:\\Users\\welcome\\Videos\\Axess_Technology_Selenium_Tasks\\src\\ScreenShort.file"+s+"User_Name.png");//Attaching the path of screenshort where we should locate//intializing string variable and Pic type .Png .
         Files.copy(file2, sc2);//Its used to copy The file path
         System.out.println("User_Name.png"); // It initiate Located Element pic name by using png.
-        
+        System.out.println(Keys.ARROW_DOWN );//
+        System.out.println("Down Arrow to Password");
         
         
         WebElement User_Password=driver.findElement(By.xpath("//input[@id=\"pass\"]"));
         User_Password.sendKeys("Gayathri1@"); 
+        
+
         
 		TakesScreenshot screen3=(TakesScreenshot)driver;  // Take a screenshort //Topic : 2
         File file3=screen3.getScreenshotAs(OutputType.FILE); //Output File to get Sceenshort
@@ -60,7 +63,7 @@ public class Test {
         
         
         WebElement User_Click_Login=driver.findElement(By.xpath("//button[text()=\"Log in\"]"));
-        User_Click_Login.sendKeys(Keys.ENTER); // Entering the Click Element By using Robot Frame_Work By using enter method.
+        User_Click_Login.sendKeys(Keys.ENTER); // Entering the Click Element By using Robot Frame_Work By using enter method.5
 		
         TakesScreenshot screen4=(TakesScreenshot)driver;  // Take a screenshort //Topic : 2
         File file4=screen3.getScreenshotAs(OutputType.FILE); //Output File to get Sceenshort
