@@ -84,9 +84,7 @@ public class Test2{
         
         System.out.println("UP Arrow to Password");
         
-	
-        
-        WebElement User_Click_Login=driver.findElement(By.xpath("//button[text()=\"Log in\"]"));
+	    WebElement User_Click_Login=driver.findElement(By.xpath("//button[text()=\"Log in\"]"));
         
         User_Click_Login.sendKeys(Keys.ENTER); // Entering the Click Element By using Robot Frame_Work By using enter method.5
 		
