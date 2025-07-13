@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Test {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		WebDriver driver = new ChromeDriver();
 
@@ -22,6 +22,10 @@ public class Test {
 		WebElement UnSelect_Check_Box = driver.findElement(By.xpath("//input[@value='netball']"));
 
 		UnSelect_Check_Box.click();
+		
+		Thread.sleep(2000);
+		
+		driver.quit();
 		
 
 	}

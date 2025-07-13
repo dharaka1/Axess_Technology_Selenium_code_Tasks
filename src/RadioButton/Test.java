@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Test {
 
-public static void main(String[] args) {
+public static void main(String[] args) throws InterruptedException {
 		
 		WebDriver driver=new ChromeDriver();
 		
@@ -18,5 +18,9 @@ public static void main(String[] args) {
 		WebElement Select_Radio_Button=driver.findElement(By.xpath("//input[@id='radioId']"));
 		
 		Select_Radio_Button.click();
+		
+		Thread.sleep(2000);
+		
+		driver.quit();
 }
 }
