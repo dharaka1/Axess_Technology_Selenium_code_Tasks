@@ -12,25 +12,25 @@ public class DragAndDrop {
 
 		WebDriver driver = new ChromeDriver();
 
-		driver.get("https://www.globalsqa.com/demo-site/draganddrop/");
+		driver.get("https://www.globalsqa.com/demo-site/draganddrop/");  //URL
 
-		driver.manage().window().maximize();
+		driver.manage().window().maximize(); // Maximize the window
 		
 		WebElement Iframe  = driver.findElement(By.xpath("//iframe[@class='demo-frame lazyloaded']"));
 		
-		driver.switchTo().frame(Iframe);
+		driver.switchTo().frame(Iframe); // Switch to iframe
 
-		WebElement Source  = driver.findElement(By.xpath("//h5[text()='High Tatras']"));
+		WebElement Source  = driver.findElement(By.xpath("//h5[text()='High Tatras']"));//source to drag
 
-		WebElement Target = driver.findElement(By.xpath("//div[@class='ui-widget-content ui-state-default ui-droppable']"));
+		WebElement Target = driver.findElement(By.xpath("//div[@class='ui-widget-content ui-state-default ui-droppable']")); //Target to drop
 		
-		Actions actions=new Actions(driver);
+		Actions actions=new Actions(driver); // Doing some actions 
 		
-		actions.dragAndDrop(Source, Target).build().perform();
+		actions.dragAndDrop(Source, Target).build().perform(); //To perform to drag and drop
 
-		Thread.sleep(4000);
+		Thread.sleep(4000); //4 secs wait
 		
-		driver.quit();
+		driver.quit(); // Quit the browser
 		
 }
 }
